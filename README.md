@@ -4,8 +4,8 @@ Reglyph is a simple tool which parses an OpenType or TrueType font and outputs i
 
 Reglyph can be used:
 
-* when needing to find missing glyphs in Adobe InDesign or any other rich-text editor that provides a regex-compatible search & replace function (use the "perl-negate" preset in InDesign),
-* for extending the supported range of a web page with the [`unicode-range`](http://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/unicode-range) property of `@font-face` in CSS3 (use the "c" preset in such case),
+* when needing to find missing glyphs in Adobe InDesign or any other rich-text editor that provides a regex-compatible search & replace function,
+* for extending the supported range of a web page with the [`unicode-range`](http://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/unicode-range) property of `@font-face` in CSS3,
 * in any other situation where you need to know which Unicode characters are supported by a font.
 
 ## Usage
