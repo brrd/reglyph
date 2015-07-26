@@ -1,0 +1,109 @@
+{
+    "perl": {
+        "regexStart": "[",
+        "regexEnd": "]+",
+        "separator": "",
+        "rangeStart": "",
+        "rangeIn": "-",
+        "rangeEnd": "",
+        "unicodeStart": "\\x{",
+        "unicodeEnd": "}"
+    },
+    "perl-negate": {
+        "regexStart": "[^",
+        "regexEnd": "]+",
+        "separator": "",
+        "rangeStart": "",
+        "rangeIn": "-",
+        "rangeEnd": "",
+        "unicodeStart": "\\x{",
+        "unicodeEnd": "}"
+    },
+    "c": {
+        "regexStart": "[",
+        "regexEnd": "]+",
+        "separator": "",
+        "rangeStart": "",
+        "rangeIn": "-",
+        "rangeEnd": "",
+        "unicodeStart": "\\u",
+        "unicodeEnd": ""
+    },
+    "c-negate": {
+        "regexStart": "[^",
+        "regexEnd": "]+",
+        "separator": "",
+        "rangeStart": "",
+        "rangeIn": "-",
+        "rangeEnd": "",
+        "unicodeStart": "\\u",
+        "unicodeEnd": ""
+    },
+    "font-face": {
+        "regexStart": "",
+        "regexEnd": "",
+        "separator": ", ",
+        "rangeStart": "U+",
+        "rangeIn": "-",
+        "rangeEnd": "",
+        "unicodeStart": "",
+        "unicodeEnd": ""
+    },
+    "html": {
+        "regexStart": "",
+        "regexEnd": "",
+        "separator": " ",
+        "rangeStart": "",
+        "rangeIn": "",
+        "rangeEnd": "",
+        "unicodeStart": "&#x",
+        "unicodeEnd": ";",
+        "enumerate": true
+    },
+    "html-decimal": {
+        "regexStart": "",
+        "regexEnd": "",
+        "separator": " ",
+        "rangeStart": "",
+        "rangeIn": "",
+        "rangeEnd": "",
+        "unicodeStart": "&#",
+        "unicodeEnd": ";",
+        "enumerate": true,
+        "decimal": true
+    },
+    "decimal": {
+        "regexStart": "",
+        "regexEnd": "",
+        "separator": ", ",
+        "rangeStart": "",
+        "rangeIn": "-",
+        "rangeEnd": "",
+        "unicodeStart": "",
+        "unicodeEnd": "",
+        "decimal": true
+    },
+    "enumerate": {
+        "regexStart": "",
+        "regexEnd": "",
+        "separator": ", ",
+        "rangeStart": "",
+        "rangeIn": "-",
+        "rangeEnd": "",
+        "unicodeStart": "",
+        "unicodeEnd": "",
+        "enumerate": true
+    },
+    "enumerate-decimal": {
+        "regexStart": "",
+        "regexEnd": "",
+        "separator": ", ",
+        "rangeStart": "",
+        "rangeIn": "-",
+        "rangeEnd": "",
+        "unicodeStart": "",
+        "unicodeEnd": "",
+        "enumerate": true,
+        "decimal": true
+    }
+}

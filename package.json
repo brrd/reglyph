@@ -1,0 +1,32 @@
+{
+  "name": "reglyph",
+  "version": "0.2.0",
+  "description": "A simple tool to get the Unicode coverage of fonts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brrd/reglyph.git"
+  },
+  "keywords": [
+    "font",
+    "glyph",
+    "regex",
+    "regular",
+    "expression",
+    "unicode",
+    "range",
+    "indesign"
+  ],
+  "main": "reglyph.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "reglyph": "cli.js"
+  },
+  "author": "Thomas Brouard",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.8.1",
+    "opentype.js": "^0.4.9"
+  }
+}
