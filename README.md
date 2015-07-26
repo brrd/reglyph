@@ -22,11 +22,13 @@ Then run the following command to install Reglyph:
 $ npm install -g reglyph
 ```
 
+To use Reglyph against a font file, simply type in a terminal:
+
 ```
 $ reglyph path/to/font --option value
 ```
 
-Avalaible options:
+Avalaible options are:
 
 * `-p` or `--preset` is the preset to use to format the output. See built-in presets in `presets.js`. If not specified, the default preset "perl-negate" is used.
 * `-c` or `--custom-presets` is the path to a custom preset file for overiding the default one. Note that the new json object is merged with the old one, so built-in presets will remains avalaible until you override them.

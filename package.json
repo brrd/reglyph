@@ -6,6 +6,9 @@
     "type": "git",
     "url": "https://github.com/brrd/reglyph.git"
   },
+  "bugs": {
+      "url": "https://github.com/brrd/reglyph/issues"
+  },
   "keywords": [
     "font",
     "glyph",

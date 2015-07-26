@@ -1,5 +1,5 @@
 /*
-    Reglyph - Font unicode coverage expressed as regular expressions
+    Reglyph - A simple tool to get the Unicode coverage of fonts
     The MIT License (MIT) - Copyright (c) 2015 Thomas Brouard
 */
 
