@@ -1,5 +1,6 @@
 {
     "perl": {
+        "description": "Perl/PCRE regular expression for finding available characters",
         "regexStart": "[",
         "regexEnd": "]+",
         "separator": "",
@@ -10,6 +11,7 @@
         "unicodeEnd": "}"
     },
     "perl-negate": {
+        "description": "Perl/PCRE regular expression for finding missing characters (use this one in InDesign)",
         "regexStart": "[^",
         "regexEnd": "]+",
         "separator": "",
@@ -19,7 +21,8 @@
         "unicodeStart": "\\x{",
         "unicodeEnd": "}"
     },
-    "c": {
+    "regex": {
+        "description": "Regular expression for finding available characters",
         "regexStart": "[",
         "regexEnd": "]+",
         "separator": "",
@@ -29,7 +32,8 @@
         "unicodeStart": "\\u",
         "unicodeEnd": ""
     },
-    "c-negate": {
+    "regex-negate": {
+        "description": "Regular expression for finding missing characters",
         "regexStart": "[^",
         "regexEnd": "]+",
         "separator": "",
@@ -40,6 +44,7 @@
         "unicodeEnd": ""
     },
     "font-face": {
+        "description": "Available Unicode ranges formatted for using with the unicode-range property of @font-face in CSS3",
         "regexStart": "",
         "regexEnd": "",
         "separator": ", ",
@@ -50,6 +55,7 @@
         "unicodeEnd": ""
     },
     "html": {
+        "description": "Enumeration of available HTML/XML entities",
         "regexStart": "",
         "regexEnd": "",
         "separator": " ",
@@ -61,6 +67,7 @@
         "enumerate": true
     },
     "html-decimal": {
+        "description": "Enumeration of available decimal HTML/XML entities",
         "regexStart": "",
         "regexEnd": "",
         "separator": " ",
@@ -73,6 +80,7 @@
         "decimal": true
     },
     "decimal": {
+        "description": "Available ranges in decimal encoding",
         "regexStart": "",
         "regexEnd": "",
         "separator": ", ",
@@ -84,6 +92,7 @@
         "decimal": true
     },
     "enumerate": {
+        "description": "List of available characters",
         "regexStart": "",
         "regexEnd": "",
         "separator": ", ",
@@ -95,6 +104,7 @@
         "enumerate": true
     },
     "enumerate-decimal": {
+        "description": "List of available characters in decimal encoding",
         "regexStart": "",
         "regexEnd": "",
         "separator": ", ",

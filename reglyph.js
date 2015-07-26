@@ -103,6 +103,20 @@ function loadCustomPresets(presetsPath) {
     }
 }
 
+function listPresets(customPresetsPath) {
+    if (customPresetsPath) {
+        loadCustomPresets(customPresetsPath);
+    }
+    console.log("\nThe following presets are available:\n");
+    for (var key in presets) {
+        if (presets[key].description) {
+            console.log("    \"" + key + "\": " + presets[key].description + "\n");
+        } else {
+            console.log(key);
+        }
+    }
+}
+
 // Main
 function reglyph(fontPath, callback, presetId, customPresetsPath) {
     if (!fontPath) {
@@ -129,19 +143,24 @@ if (!module.parent) {
         .version(pkg.version)
         .description('Outputs the Unicode coverage of the given font.')
         .usage('<file> [options]')
+        .option("-l, --list-presets", "list available presets")
         .option("-p, --preset [name]", "define the template preset used for formatting the output (default: '" + defaultPresetId + "')")
         .option('-c, --custom-presets [path]', 'declare an alternative presets file')
         .action(function(cmd) {
             fontPath = cmd;
         })
         .parse(process.argv);
-    if (typeof fontPath === 'undefined') {
+    if (typeof fontPath === 'undefined' && typeof program.listPresets === "undefined") {
         console.error('Error: no font filepath given');
         process.exit(1);
     }
     var presetId = program.preset || defaultPresetId,
         customPresetsPath = program.customPresets;
-    reglyph(fontPath, console.log, presetId, customPresetsPath);
+    if (program.listPresets) {
+        listPresets(customPresetsPath);
+    } else {
+        reglyph(fontPath, console.log, presetId, customPresetsPath);
+    }
 } else {
     // Module usage
     module.exports = reglyph;

@@ -5,7 +5,7 @@ Reglyph is a simple tool which parses an OpenType or TrueType font and outputs i
 Reglyph can be used:
 
 * when needing to find missing glyphs in Adobe InDesign or any other rich-text editor that provides a regex-compatible search & replace function (use the "perl-negate" preset in InDesign),
-* for extending the supported range of a web page with the [`unicode-range`](http://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/unicode-range)property of `@font-face` in CSS3 (use the "c" preset in such case),
+* for extending the supported range of a web page with the [`unicode-range`](http://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/unicode-range) property of `@font-face` in CSS3 (use the "c" preset in such case),
 * in any other situation where you need to know which Unicode characters are supported by a font.
 
 ## Usage
@@ -30,8 +30,11 @@ $ reglyph path/to/font --option value
 
 Avalaible options are:
 
-* `-p` or `--preset` is the preset to use to format the output. See built-in presets in `presets.js`. If not specified, the default preset "perl-negate" is used.
-* `-c` or `--custom-presets` is the path to a custom preset file for overiding the default one. Note that the new json object is merged with the old one, so built-in presets will remains avalaible until you override them.
+* `-p` or `--preset` is the preset to use to format the output. If not specified, the default preset "perl-negate" is used.
+* `-c` or `--custom-presets` is the path to a custom preset file for overriding the default one. Note that the new JSON object is merged with the old one, so built-in presets will remains available until you override them.
+* `-l` or `--list-presets` outputs the list of available presets with their descriptions. Can be used in combination with the `-c` option.
+* `-V` or `--version` outputs Reglyph current version.
+* `-h` or `--help` shows Reglyph help for CLI.
 
 ### Node.js module
 
@@ -74,7 +77,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
-
-
-
-
