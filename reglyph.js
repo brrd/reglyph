@@ -49,6 +49,8 @@ function convertToRanges(list) {
             }
             // Open a new range
             ranges.push([list[i]]);
+        } else if (i === list.length - 1) {
+            ranges[ranges.length - 1].push(list[i]);
         }
     }
     return ranges;
