@@ -1,6 +1,6 @@
 {
   "name": "reglyph",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "A simple tool to get the Unicode coverage of fonts",
   "repository": {
     "type": "git",
