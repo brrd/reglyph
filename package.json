@@ -21,7 +21,7 @@
   ],
   "main": "reglyph.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test"
   },
   "bin": {
     "reglyph": "cli.js"
@@ -31,5 +31,8 @@
   "dependencies": {
     "commander": "^2.8.1",
     "opentype.js": "^0.4.9"
+  },
+  "devDependencies": {
+    "mocha": "^3.4.2"
   }
 }
